@@ -1,0 +1,44 @@
+name: Dwarf
+base_speed: 25
+size: medium
+darkvision: 60
+attribute_bonus:
+  con: 2
+languages:
+  - common
+  - dwarvish
+race_features:
+  - darkvision
+  - dwarven_resilience
+  - dwarven_combat_training
+  - stonecunning
+weapon_proficiencies:
+  - battleaxe
+  - handaxe
+  - light_hammer
+  - warhammer
+tool_proficiencies:
+  - smiths_tools
+  - brewers_supplies
+  - masons_tools
+resistance:
+  - poison
+subrace:
+  hill_dwarf:
+    name: Hill Dwarf
+    attribute_bonus:
+      wis: 1
+    hp_bonus_per_level: 1
+    description: As a hill dwarf, you have keen senses and deep intuitions.
+  mountain_dwarf:
+    name: Mountain Dwarf
+    attribute_bonus:
+      str: 2
+    armor_proficiencies:
+      - light_armor
+      - medium_armor
+    description: As a mountain dwarf, you're strong and hardy.
+description: >
+  Bold and hardy, dwarves are known as skilled warriors, miners, and workers
+  of stone and metal. With a +2 to Constitution, darkvision, and resistance
+  to poison, they are durable frontline fighters.

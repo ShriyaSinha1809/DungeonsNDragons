@@ -1,0 +1,50 @@
+kind: Orc
+size: medium
+race:
+  - humanoid
+  - orc
+default_ac: 13
+max_hp: 15
+hp_die: 2d8+6
+speed: 30
+passive_perception: 10
+darkvision: 60
+cr: 0.5
+xp: 100
+proficiency_bonus: 2
+ability:
+  str: 16
+  dex: 12
+  con: 16
+  int: 7
+  wis: 11
+  cha: 10
+skills:
+  intimidation: 2
+languages:
+  - common
+  - orc
+attributes:
+  - aggressive
+actions:
+  - name: Greataxe
+    type: melee_attack
+    range: 5
+    targets: 1
+    attack: 5
+    damage_die: 1d12+3
+    damage_type: slashing
+  - name: Javelin
+    type: ranged_attack
+    range: 30
+    range_max: 120
+    targets: 1
+    attack: 5
+    damage_die: 1d6+3
+    damage_type: piercing
+equipped:
+  - greataxe
+  - hide_armor
+default_inventory:
+  - type: gold_piece
+    qty: 5

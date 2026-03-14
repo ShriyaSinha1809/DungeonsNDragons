@@ -1,0 +1,159 @@
+firebolt:
+  name: Fire Bolt
+  level: 0
+  school: evocation
+  casting_time: 1:action
+  range: 120
+  components:
+    - verbal
+    - somatic
+  duration: instantaneous
+  type: ranged_attack
+  base_damage: 1d10
+  damage_type: fire
+  damage_increase:
+    - 5
+    - 11
+    - 17
+  description: >
+    You hurl a mote of fire at a creature or object within range. Make a ranged
+    spell attack against the target. On a hit, the target takes 1d10 fire damage.
+
+ray_of_frost:
+  name: Ray of Frost
+  level: 0
+  school: evocation
+  casting_time: 1:action
+  range: 60
+  components:
+    - verbal
+    - somatic
+  duration: instantaneous
+  type: ranged_attack
+  base_damage: 1d8
+  damage_type: cold
+  damage_increase:
+    - 5
+    - 11
+    - 17
+  effect: speed_reduction_10
+  description: >
+    A frigid beam of blue-white light streaks toward a creature within range.
+    Make a ranged spell attack against the target. On a hit, it takes 1d8 cold
+    damage, and its speed is reduced by 10 feet until the start of your next turn.
+
+shocking_grasp:
+  name: Shocking Grasp
+  level: 0
+  school: evocation
+  casting_time: 1:action
+  range: 5
+  components:
+    - verbal
+    - somatic
+  duration: instantaneous
+  type: melee_spell_attack
+  base_damage: 1d8
+  damage_type: lightning
+  damage_increase:
+    - 5
+    - 11
+    - 17
+  description: >
+    Lightning springs from your hand to deliver a shock to a creature you try
+    to touch. Make a melee spell attack against the target. On a hit, the target
+    takes 1d8 lightning damage and can't take reactions until the start of its
+    next turn.
+
+magic_missile:
+  name: Magic Missile
+  level: 1
+  school: evocation
+  casting_time: 1:action
+  range: 120
+  components:
+    - verbal
+    - somatic
+  duration: instantaneous
+  type: auto_hit
+  base_damage: 1d4+1
+  damage_type: force
+  missiles: 3
+  description: >
+    You create three glowing darts of magical force. Each dart hits a creature
+    of your choice that you can see within range. A dart deals 1d4+1 force damage
+    to its target. The darts all strike simultaneously.
+
+cure_wounds:
+  name: Cure Wounds
+  level: 1
+  school: evocation
+  casting_time: 1:action
+  range: 0
+  components:
+    - verbal
+    - somatic
+  duration: instantaneous
+  type: healing
+  base_heal: 1d8
+  description: >
+    A creature you touch regains a number of hit points equal to 1d8 + your
+    spellcasting ability modifier.
+
+shield:
+  name: Shield
+  level: 1
+  school: abjuration
+  casting_time: 1:reaction
+  range: 0
+  components:
+    - verbal
+    - somatic
+  duration: 1R
+  type: reaction
+  bonus_ac: 5
+  description: >
+    An invisible barrier of magical force appears and protects you. Until the
+    start of your next turn, you have a +5 bonus to AC, including against the
+    triggering attack.
+
+mage_armor:
+  name: Mage Armor
+  level: 1
+  school: abjuration
+  casting_time: 1:action
+  range: 0
+  components:
+    - verbal
+    - somatic
+    - material
+  materials: a piece of cured leather
+  duration: 8h
+  type: buff
+  set_ac: 13
+  description: >
+    You touch a willing creature who isn't wearing armor, and a protective
+    magical force surrounds it until the spell ends. The target's base AC
+    becomes 13 + its Dexterity modifier.
+
+burning_hands:
+  name: Burning Hands
+  level: 1
+  school: evocation
+  casting_time: 1:action
+  range: 15
+  components:
+    - verbal
+    - somatic
+  duration: instantaneous
+  type: saving_throw
+  save_ability: dex
+  dc_base: 8
+  base_damage: 3d6
+  damage_type: fire
+  half_on_save: true
+  description: >
+    As you hold your hands with thumbs touching and fingers spread, a thin
+    sheet of flames shoots forth. Each creature in a 15-foot cone must make
+    a Dexterity saving throw. A creature takes 3d6 fire damage on a failed
+    save, or half as much on a successful one.

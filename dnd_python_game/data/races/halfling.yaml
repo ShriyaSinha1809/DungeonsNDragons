@@ -1,0 +1,36 @@
+name: Halfling
+base_speed: 25
+size: small
+darkvision: 0
+attribute_bonus:
+  dex: 2
+languages:
+  - common
+  - halfling
+race_features:
+  - lucky
+  - brave
+  - halfling_nimbleness
+subrace:
+  lightfoot:
+    name: Lightfoot Halfling
+    attribute_bonus:
+      cha: 1
+    naturally_stealthy: true
+    description: >
+      As a lightfoot halfling, you can easily hide from notice, even using
+      other people as cover.
+  stout:
+    name: Stout Halfling
+    attribute_bonus:
+      con: 1
+    resilience:
+      advantage_on: poison_saves
+      resistance_to: poison
+    description: >
+      As a stout halfling, you're hardier than average and have resistance
+      to poison.
+description: >
+  The diminutive halflings survive in a world full of larger creatures by
+  avoiding notice or, barring that, avoiding offense. With a +2 to Dexterity
+  and the Lucky trait, they rarely face disadvantage.

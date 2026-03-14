@@ -1,0 +1,51 @@
+kind: Skeleton
+size: medium
+race:
+  - undead
+default_ac: 13
+max_hp: 13
+hp_die: 2d8+4
+speed: 30
+passive_perception: 8
+darkvision: 60
+cr: 0.25
+xp: 50
+proficiency_bonus: 2
+ability:
+  str: 10
+  dex: 14
+  con: 15
+  int: 6
+  wis: 8
+  cha: 5
+damage_vulnerabilities:
+  - bludgeoning
+damage_immunities:
+  - poison
+condition_immunities:
+  - exhaustion
+  - poisoned
+languages: []
+actions:
+  - name: Shortsword
+    type: melee_attack
+    range: 5
+    targets: 1
+    attack: 4
+    damage_die: 1d6+2
+    damage_type: piercing
+  - name: Shortbow
+    type: ranged_attack
+    range: 80
+    range_max: 320
+    targets: 1
+    attack: 4
+    damage_die: 1d6+2
+    damage_type: piercing
+    ammo: arrows
+equipped:
+  - shortsword
+  - shortbow
+default_inventory:
+  - type: arrows
+    qty: 20

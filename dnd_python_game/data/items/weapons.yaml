@@ -1,0 +1,120 @@
+longsword:
+  cost: 15
+  damage: 1d8
+  damage_2: 1d10
+  damage_type: slashing
+  name: Longsword
+  proficiency_type:
+    - martial
+  properties:
+    - versatile
+  range: 5
+  type: melee_attack
+  weight: 3
+
+shortsword:
+  cost: 10
+  damage: 1d6
+  damage_type: piercing
+  name: Shortsword
+  proficiency_type:
+    - martial
+  properties:
+    - finesse
+    - light
+  range: 5
+  type: melee_attack
+  weight: 2
+
+dagger:
+  cost: 2
+  damage: 1d4
+  damage_type: piercing
+  name: Dagger
+  proficiency_type:
+    - simple
+  properties:
+    - finesse
+    - light
+    - thrown
+  thrown:
+    range: 20
+    range_max: 60
+  range: 5
+  type: melee_attack
+  weight: 1
+
+handaxe:
+  cost: 5
+  damage: 1d6
+  damage_type: slashing
+  name: Handaxe
+  proficiency_type:
+    - simple
+  properties:
+    - light
+    - thrown
+  thrown:
+    range: 20
+    range_max: 60
+  range: 5
+  type: melee_attack
+  weight: 2
+
+greataxe:
+  cost: 30
+  damage: 1d12
+  damage_type: slashing
+  name: Greataxe
+  proficiency_type:
+    - martial
+  properties:
+    - heavy
+    - two_handed
+  range: 5
+  type: melee_attack
+  weight: 7
+
+quarterstaff:
+  cost: 2
+  damage: 1d6
+  damage_2: 1d8
+  damage_type: bludgeoning
+  name: Quarterstaff
+  proficiency_type:
+    - simple
+  properties:
+    - versatile
+  range: 5
+  type: melee_attack
+  weight: 4
+
+shortbow:
+  cost: 25
+  damage: 1d6
+  damage_type: piercing
+  name: Shortbow
+  proficiency_type:
+    - simple
+  properties:
+    - ammunition
+    - two_handed
+  ammo: arrows
+  range: 80
+  range_max: 320
+  type: ranged_attack
+  weight: 2
+
+scimitar:
+  cost: 25
+  damage: 1d6
+  damage_type: slashing
+  name: Scimitar
+  proficiency_type:
+    - martial
+  properties:
+    - finesse
+    - light
+  range: 5
+  type: melee_attack
+  weight: 3

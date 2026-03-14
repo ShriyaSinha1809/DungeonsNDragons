@@ -1,0 +1,20 @@
+name: Human
+base_speed: 30
+size: medium
+darkvision: 0
+attribute_bonus:
+  str: 1
+  dex: 1
+  con: 1
+  int: 1
+  wis: 1
+  cha: 1
+languages:
+  - common
+  - one_extra
+race_features:
+  - extra_language
+  - extra_skill
+description: >
+  Humans are the most adaptable and ambitious people among the common races.
+  They receive a +1 bonus to all ability scores, reflecting their versatility.

@@ -1,0 +1,200 @@
+{
+  "player": {
+    "name": "Roundtrip",
+    "char_class": "fighter",
+    "race": "human",
+    "level": 1,
+    "hp": 12,
+    "max_hp": 12,
+    "ac": 18,
+    "ability_scores": {
+      "str": 16,
+      "dex": 13,
+      "con": 15,
+      "int": 11,
+      "wis": 11,
+      "cha": 9
+    },
+    "location": "Tavern \u2014 The Tipsy Flagon",
+    "proficient_skills": [
+      "athletics",
+      "intimidation",
+      "perception"
+    ],
+    "proficient_saves": [
+      "str",
+      "con"
+    ],
+    "equipped": {
+      "armor": "chain_mail",
+      "main_hand": "longsword",
+      "off_hand": "shield"
+    },
+    "inventory": [
+      {
+        "type": "healing_potion",
+        "qty": 1
+      }
+    ],
+    "spell_slots": {},
+    "known_spells": [],
+    "death_saves": {
+      "successes": 0,
+      "failures": 0
+    },
+    "conditions": [],
+    "xp": 0,
+    "gold": 10
+  },
+  "npcs": {
+    "goblin_1": {
+      "npc_id": "goblin_1",
+      "kind": "Goblin",
+      "hp": 7,
+      "max_hp": 7,
+      "ac": 15,
+      "ability_scores": {
+        "str": 8,
+        "dex": 14,
+        "con": 10,
+        "int": 10,
+        "wis": 8,
+        "cha": 8
+      },
+      "location": "Goblin Cave \u2014 Entrance",
+      "hostile": true,
+      "equipped": [
+        "scimitar",
+        "shortbow",
+        "leather_armor"
+      ],
+      "inventory": [
+        {
+          "type": "arrows",
+          "qty": 20
+        },
+        {
+          "type": "gold_piece",
+          "qty": 3
+        }
+      ],
+      "actions": [
+        {
+          "name": "Scimitar",
+          "type": "melee_attack",
+          "range": 5,
+          "targets": 1,
+          "attack": 4,
+          "damage_die": "1d6+2",
+          "damage_type": "slashing"
+        },
+        {
+          "name": "Shortbow",
+          "type": "ranged_attack",
+          "range": 80,
+          "range_max": 320,
+          "targets": 1,
+          "attack": 4,
+          "damage_die": "1d6+2",
+          "damage_type": "piercing",
+          "ammo": "arrows"
+        }
+      ],
+      "conditions": [],
+      "xp_value": 50,
+      "damage_vulnerabilities": [],
+      "damage_immunities": [],
+      "proficiency_bonus": 2,
+      "skills": {
+        "stealth": 6
+      }
+    },
+    "goblin_2": {
+      "npc_id": "goblin_2",
+      "kind": "Goblin",
+      "hp": 7,
+      "max_hp": 7,
+      "ac": 15,
+      "ability_scores": {
+        "str": 8,
+        "dex": 14,
+        "con": 10,
+        "int": 10,
+        "wis": 8,
+        "cha": 8
+      },
+      "location": "Goblin Cave \u2014 Entrance",
+      "hostile": true,
+      "equipped": [
+        "scimitar",
+        "shortbow",
+        "leather_armor"
+      ],
+      "inventory": [
+        {
+          "type": "arrows",
+          "qty": 20
+        },
+        {
+          "type": "gold_piece",
+          "qty": 3
+        }
+      ],
+      "actions": [
+        {
+          "name": "Scimitar",
+          "type": "melee_attack",
+          "range": 5,
+          "targets": 1,
+          "attack": 4,
+          "damage_die": "1d6+2",
+          "damage_type": "slashing"
+        },
+        {
+          "name": "Shortbow",
+          "type": "ranged_attack",
+          "range": 80,
+          "range_max": 320,
+          "targets": 1,
+          "attack": 4,
+          "damage_die": "1d6+2",
+          "damage_type": "piercing",
+          "ammo": "arrows"
+        }
+      ],
+      "conditions": [],
+      "xp_value": 50,
+      "damage_vulnerabilities": [],
+      "damage_immunities": [],
+      "proficiency_bonus": 2,
+      "skills": {
+        "stealth": 6
+      }
+    }
+  },
+  "active_quests": [
+    {
+      "quest_id": "goblin_cave",
+      "title": "Clear the Goblin Cave",
+      "description": "A group of goblins has been terrorizing the local village. Clear them out!",
+      "objectives": [
+        {
+          "description": "Defeat all goblins in the cave",
+          "completed": false
+        },
+        {
+          "description": "Return to the village elder",
+          "completed": false
+        }
+      ],
+      "completed": false
+    }
+  ],
+  "turn_history": [],
+  "current_scene": "You find yourself in a dimly lit tavern at the edge of town.",
+  "combat_state": null,
+  "config": {
+    "difficulty": 3,
+    "custom_rules": ""
+  }
+}

@@ -1,0 +1,86 @@
+padded:
+  ac: 11
+  name: Padded Armor
+  subtype: light
+  type: armor
+  dex_mod_cap: null
+  weight: 8
+  cost: 5
+  stealth_disadvantage: true
+
+leather_armor:
+  ac: 11
+  name: Leather Armor
+  subtype: light
+  type: armor
+  dex_mod_cap: null
+  weight: 10
+  cost: 10
+
+studded_leather:
+  ac: 12
+  name: Studded Leather Armor
+  subtype: light
+  type: armor
+  dex_mod_cap: null
+  weight: 13
+  cost: 45
+
+chain_shirt:
+  ac: 13
+  name: Chain Shirt
+  subtype: medium
+  type: armor
+  dex_mod_cap: 2
+  weight: 20
+  cost: 50
+
+scale_mail:
+  ac: 14
+  name: Scale Mail
+  subtype: medium
+  type: armor
+  dex_mod_cap: 2
+  weight: 45
+  cost: 50
+  stealth_disadvantage: true
+
+chain_mail:
+  ac: 16
+  name: Chain Mail
+  subtype: heavy
+  type: armor
+  dex_mod_cap: 0
+  weight: 55
+  cost: 75
+  metallic: true
+  stealth_disadvantage: true
+  min_str: 13
+
+plate_armor:
+  ac: 18
+  name: Plate Armor
+  subtype: heavy
+  type: armor
+  dex_mod_cap: 0
+  weight: 65
+  cost: 1500
+  metallic: true
+  stealth_disadvantage: true
+  min_str: 15
+
+shield:
+  bonus_ac: 2
+  name: Shield
+  type: shield
+  weight: 6
+  cost: 10
+
+hide_armor:
+  ac: 12
+  name: Hide Armor
+  subtype: medium
+  type: armor
+  dex_mod_cap: 2
+  weight: 12
+  cost: 10

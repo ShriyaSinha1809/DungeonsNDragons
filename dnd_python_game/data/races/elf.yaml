@@ -1,0 +1,44 @@
+name: Elf
+base_speed: 30
+size: medium
+darkvision: 60
+attribute_bonus:
+  dex: 2
+languages:
+  - common
+  - elvish
+race_features:
+  - darkvision
+  - keen_senses
+  - fey_ancestry
+  - trance
+skills:
+  - perception
+subrace:
+  high_elf:
+    name: High Elf
+    attribute_bonus:
+      int: 1
+    weapon_proficiencies:
+      - longsword
+      - shortsword
+      - shortbow
+      - longbow
+    cantrip: 1
+    extra_language: 1
+    description: As a high elf, you have keen senses and a mind for magic.
+  wood_elf:
+    name: Wood Elf
+    attribute_bonus:
+      wis: 1
+    weapon_proficiencies:
+      - longsword
+      - shortsword
+      - shortbow
+      - longbow
+    base_speed: 35
+    mask_of_the_wild: true
+    description: As a wood elf, you have keen senses and intuition.
+description: >
+  Elves are a magical people of otherworldly grace. With a +2 to Dexterity and
+  darkvision, they excel at stealth and ranged combat.
