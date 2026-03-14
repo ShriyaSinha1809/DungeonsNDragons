@@ -2,6 +2,7 @@ import sys
 from config_builder import display_welcome_menu
 from state_manager import StateManager
 from dm_agent import DMAgent
+from intent_parser import IntentParser
 
 def main():
     # Phase 1: Initialization
@@ -10,8 +11,9 @@ def main():
     print("\n--- Initializing Session ---")
     
     # Phase 2: Architecture Setup
-    statbe_manager = StateManager(config)
+    state_manager = StateManager(config)
     dm = DMAgent(system_prompt="")
+    intent_parser = IntentParser()
     dm.start_session(config)
     
     input("Press Enter to begin your adventure...")
@@ -34,11 +36,14 @@ def main():
             print("\n[Evaluating Action...]")
             
             # Step 2 & 3: Intent Parsing & Mechanic Resolution
+            parsed_intent = intent_parser.parse(player_action)
+            print(f"[Parsed Intent: {parsed_intent['type']}]")
+            
             mechanic_result = state_manager.resolve_mechanic(player_action)
-            action_log = f"Player attempted: '{player_action}'. System Result: {mechanic_result}"
+            action_log = f"Player Intent: {parsed_intent['type']} | Detail: '{player_action}'. System Result: {mechanic_result}"
             state_manager.world.log_action(player_action, mechanic_result)
             
-            if "stealth" in player_action.lower() and "Success" in mechanic_result:
+            if "stealth" in parsed_intent.get("skill", "") and "Success" in mechanic_result:
                 state_manager.world.update_location("Sewer/Shadows")
                 
             # Step 4: Context Payload construction
